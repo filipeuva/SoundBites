@@ -1,0 +1,9 @@
+# git
+.git/
+
+# project
+bin/
+.eclipse/
+.classpath
+.project
+.settings/

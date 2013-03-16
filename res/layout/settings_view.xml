@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/cbUseMvmtData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20px" />
+
+    <Button
+        android:id="@+id/btnSettingsBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Apply"
+        android:textSize="25px" />
+
+    <TextView
+        android:id="@+id/textUseMvmtData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbUseMvmtData"
+        android:layout_alignBottom="@+id/cbUseMvmtData"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:text="Use data about your movements"
+        android:textColor="#ffffff"
+        android:textSize="25px" />
+
+    <EditText
+        android:id="@+id/edittextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cbUseMvmtData"
+        android:layout_margin="20px" android:layout_toLeftOf="@+id/textTime" android:text="1"/>
+
+    <EditText
+        android:id="@+id/edittextPollTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edittextTime"
+        android:layout_margin="20px"
+        android:layout_toLeftOf="@+id/textPollTime" android:text="1"/>
+
+    <TextView
+        android:id="@+id/textPollTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edittextPollTime"
+        android:layout_alignBottom="@+id/edittextPollTime"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20px"
+        android:text="Microphone poll time (secs)"
+        android:textColor="#ffffff"
+        android:textSize="25px" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edittextTime"
+        android:layout_alignBottom="@+id/edittextTime"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20px"
+        android:text="Microphone poll interval (mins)"
+        android:textColor="#ffffff"
+        android:textSize="25px" />
+
+</RelativeLayout>

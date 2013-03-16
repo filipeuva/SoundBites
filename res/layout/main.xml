@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/flipper"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+>
+<include android:id="@+id/first"  layout="@layout/training_view" />
+<include android:id="@+id/second"  layout="@layout/main_view" />
+<include android:id="@+id/third"  layout="@layout/settings_view" />
+</ViewFlipper>

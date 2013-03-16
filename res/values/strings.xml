@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">SoundBites</string>
+    <string name="dir_path">/sdcard/soundbites/</string>
+    <string name="contextNameService">contextNameService</string>
+
+</resources>
