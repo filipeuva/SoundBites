@@ -1,7 +1,7 @@
 SoundBites
 ==========
 
-SoundBites, environment recognition through sounds. This is an application which puts my research into audio environment recognition. It was developed with the Nexus One (running Android 2.3.3) as a test unit, so support on other Android phones is not guaranteed.
+SoundBites, environment recognition through sounds. This is an application which puts my research into audio environment recognition into practice. It was developed with the Nexus One (running Android 2.3.3) as a test unit, so support on other Android phones is not guaranteed.
 
 (Theoretically) Works in counterpart with SoundBitesMonkey, an Android service: http://github.com/williamberg/SoundBitesMonkey
 
