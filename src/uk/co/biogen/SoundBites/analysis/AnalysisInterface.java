@@ -2,6 +2,9 @@ package uk.co.biogen.SoundBites.analysis;
 
 import java.util.Arrays;
 
+import marytts.signalproc.analysis.LpcAnalyser;
+import marytts.signalproc.analysis.LpcAnalyser.LpCoeffs;
+import marytts.util.data.DoubleDataSource;
 import uk.co.biogen.SoundBites.analysis.comirva.FFT;
 import uk.co.biogen.SoundBites.analysis.comirva.MFCC;
 import uk.co.biogen.SoundBites.analysis.jAudio.JAudioFFT;
@@ -10,9 +13,6 @@ import uk.co.biogen.SoundBites.analysis.jAudio.RMS;
 import uk.co.biogen.SoundBites.analysis.jAudio.SpectralCentroid;
 import uk.co.biogen.SoundBites.analysis.jAudio.SpectralFlux;
 import uk.co.biogen.SoundBites.analysis.jAudio.SpectralRolloffPoint;
-import de.dfki.lt.signalproc.analysis.LPCAnalyser;
-import de.dfki.lt.signalproc.analysis.LPCAnalyser.LPCoeffs;
-import de.dfki.lt.signalproc.util.DoubleDataSource;
 
 public class AnalysisInterface
 {
@@ -198,8 +198,8 @@ public class AnalysisInterface
       }
     };
     
-    LPCAnalyser lpca = new LPCAnalyser(windowAsDDS, window.length, 0, SAMPLE_RATE, coefficients, 3); // 3: Hann window used
-    LPCoeffs lpcoeffs = (LPCoeffs) lpca.analyse(doublesFromShorts(window));
+    LpcAnalyser lpca = new LpcAnalyser(windowAsDDS, window.length, 0, SAMPLE_RATE, coefficients, 3); // 3: Hann window used
+    LpCoeffs lpcoeffs = (LpCoeffs) lpca.analyse(doublesFromShorts(window));
     
     /*
      * Internal documentation from:

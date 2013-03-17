@@ -18,7 +18,6 @@ import uk.co.biogen.SoundBites.rec.Recorder;
 import uk.co.biogen.SoundBites.rec.RecordingsManager;
 import uk.co.biogen.SoundBites.util.FileManager;
 import android.media.MediaRecorder;
-import android.util.Log;
 
 public class SoundBitesStartModel
 {

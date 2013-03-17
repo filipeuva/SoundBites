@@ -2,8 +2,11 @@
 .git/
 
 # project
-bin/
 .eclipse/
 .classpath
 .project
 .settings/
+
+# generated
+bin/
+gen/
